@@ -1,5 +1,6 @@
-
-
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faAngleLeft,faAngleRight} from '@fortawesome/free-solid-svg-icons';
+//import FontAwesomeIcon from '@fortawesome/free-brands-svg-icons';
 function Body() {
 
     return (
@@ -11,7 +12,7 @@ function Body() {
           <p className='mb-5'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br></br>Unde molestiae esse aspernatur accusantium.</p>
         </div>
         <div className="flex items-center justify-between">
-        <h3 className="text-2xl my-4"></h3> 
+        
         <div className='w-1/3 overflow-hidden p-3 hover:scale-105 transition-transform duration-200 ease-in-out'>
             <img className='rounded cursor-pointer' src="./images/w.jpg" alt="nice house" />
             <div className="bg-white pt-1 px-2 pb-2 rounded" >
@@ -45,9 +46,10 @@ function Body() {
             <p className='mb-2'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos repudiandae optio non expedita consequuntur perspiciatis aut, aliquam amet odio saepe minus.</p>
             <p className="mb-2">soluta eos corrupti, hic placeat perspiciatis laudantium, corporis nobis ad ipsum?</p>
             <h3 className="text-2xl">Lanre Bayode</h3>  
-            <p className="mb-2">A Happy Client</p>
+            <p className="mb-5">A Happy Client</p>
             <div className="flex">
-              <div className="rounded-full bg-red-500 p-5 items-center content-center">ff</div>
+              <div className="text-2xl cursor-pointer bg-red-300 hidden:hover:bg-red-700 py-2 px-3 rounded-full shadow text-white mr-4 flex items-center"><FontAwesomeIcon icon={faAngleLeft} /></div>
+              <div className="text-2xl cursor-pointer bg-red-600 hover:bg-red-700 py-2 px-3 rounded-full shadow text-white mr-4 flex items-center"><FontAwesomeIcon  icon={faAngleRight} /></div>
             </div>
           </div>
         </div>
